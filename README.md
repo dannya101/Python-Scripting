@@ -3,7 +3,7 @@ This project shows basic scripting to allow to run multiple different files that
 
 Main code is wrapper.py file which runs all the subprocesses
 
-##To run this program 
+## To run this program 
 1. First download the zipfile
 2. Then once you have downloaded it successfully open up any environment that is able to run python, like VSCode
 3. Once you have the environment open, unzip the repository you downloaded and open the folder in your environment
