@@ -1,7 +1,9 @@
 import subprocess #allows me to run outside applications like different languages
 
 print("Running MATLAB CODE 1...")
-matlab_executable = '/Applications/MATLAB_R2023b.app/bin/matlab' #specifiying path to matlab executable
+matlab_executable = "C:/Program Files/MATLAB/R2024b/bin/matlab" #where my matlab executable is on my windows computer
+#may be different on other computers
+
       
 #setting up new matlab environment and running first file of matlab code
 matlab_process = subprocess.run([matlab_executable, "-batch", "run('matlabcode1.m'); pause(1);"], capture_output = True)
@@ -16,7 +18,7 @@ with open('input.txt', 'r') as file:
 subprocess.run(["gcc", "cccprog.c", "-o", "CProg"])
 
 #run C program with the input array as arguments to this C code then storing this result from C code to a variable
-process = subprocess.run(["./CProg"] + input_array, capture_output=True, text=True)
+process = subprocess.run(["CProg.exe"] + input_array, capture_output=True, text=True)
 output_variable = process.stdout.strip()
 
 print("\nRunning C program output...")

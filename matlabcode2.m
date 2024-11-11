@@ -11,10 +11,10 @@ outputArrayHas = uint8(str2num(img2));
 outArrProlog = uint8(str2num(img3));
 
 %reshape each array to a matrix of 256 by 256
-origImg2 = reshape(origImgArray, 256, 256);
-img_2d = reshape(unsigChars, 256, 256);
-img_2dNew = reshape(outputArrayHas, 256, 256);
-img_2dNewer = reshape(outArrProlog, 256, 256);
+origImg2 = reshape(origImgArray, 75, 75);
+img_2d = reshape(unsigChars, 75, 75);
+img_2dNew = reshape(outputArrayHas, 75, 75);
+img_2dNewer = reshape(outArrProlog, 75, 75);
 
 % figure;
 
